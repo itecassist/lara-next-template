@@ -94,7 +94,7 @@ This is just a reference because I created the project using the (almost) latest
 
     - `NEXT_PUBLIC_BACKEND_URL`: The URL of the Laravel backend API. This variable is shared between client and server components, hence the `NEXT_PUBLIC` prefix.
     - `FRONTEND_URL`: The URL of the frontend application. It is used for the `Referer` header on requests so Laravel accepts them.
-    - `JWT_SECRET`: A secret key used for creating a custom auth cookie using the `jose` library, which works on the edge runtime (middleware).
+    - `JWT_SECRET`: A secret key used for creating a custom auth cookie using the `jose` library, which works on the edge runtime (middleware).  node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
 
 ### Backend
 
